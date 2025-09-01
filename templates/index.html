@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional painting services for residential and commercial properties. Interior and exterior painting with free estimates.">
+    <meta name="keywords" content="painting contractor, house painting, commercial painting, interior painting, exterior painting">
+    <title>ProPainters | Professional Painting Services</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">Pro<span>Painters</span></a>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Transforming Spaces With Expert Painting</h1>
+            <p>Professional residential and commercial painting services that bring color and life to your property</p>
+            <a href="#contact" class="btn">Get a Free Estimate</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>With over 15 years of experience, ProPainters has established itself as a trusted name in the painting industry. We take pride in delivering exceptional results for both residential and commercial clients.</p>
+                    <p>Our team of professional painters is dedicated to quality craftsmanship, attention to detail, and customer satisfaction. We use only the highest quality paints and materials to ensure a finish that not only looks beautiful but lasts for years to come.</p>
+                    <p>Whether you're looking to refresh a single room or need a complete exterior makeover, we approach every project with the same level of professionalism and commitment to excellence.</p>
+                    <a href="#contact" class="btn">Contact Us Today</a>
+                </div>
+                <div class="about-image">
+                    <img src="{{ url_for('static', filename='images/about.jpg') }}" alt="Professional painter at work">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Residential Painting</h3>
+                    <p>Transform your home with our interior and exterior painting services. We help you choose the perfect colors and finishes to match your style.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Commercial Painting</h3>
+                    <p>Enhance your business environment with our professional commercial painting services, designed to minimize disruption to your operations.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-roller"></i>
+                    </div>
+                    <h3>Interior Painting</h3>
+                    <p>Refresh your living spaces with our meticulous interior painting services. We pay attention to every detail for a flawless finish.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-house"></i>
+                    </div>
+                    <h3>Exterior Painting</h3>
+                    <p>Protect and beautify your property's exterior with our weather-resistant painting solutions that stand the test of time.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-trowel"></i>
+                    </div>
+                    <h3>Surface Preparation</h3>
+                    <p>Proper preparation is key to a lasting paint job. We handle all necessary prep work including scraping, sanding, and priming.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3>Color Consultation</h3>
+                    <p>Not sure which colors to choose? Our experts will help you select the perfect palette to achieve your desired look.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Our Work</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="{{ url_for('static', filename='images/gallery-1.jpg') }}" alt="Living room painting transformation">
+                    <div class="gallery-overlay">
+                        <h3>Living Room Transformation</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="{{ url_for('static', filename='images/gallery-2.jpg') }}" alt="Exterior house painting">
+                    <div class="gallery-overlay">
+                        <h3>Exterior Makeover</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="{{ url_for('static', filename='images/gallery-3.jpg') }}" alt="Office painting project">
+                    <div class="gallery-overlay">
+                        <h3>Office Refresh</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="{{ url_for('static', filename='images/gallery-4.jpg') }}" alt="Kitchen painting update">
+                    <div class="gallery-overlay">
+                        <h3>Kitchen Update</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="{{ url_for('static', filename='images/gallery-5.jpg') }}" alt="Bedroom painting refresh">
+                    <div class="gallery-overlay">
+                        <h3>Bedroom Refresh</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="{{ url_for('static', filename='images/gallery-6.jpg') }}" alt="Commercial building painting">
+                    <div class="gallery-overlay">
+                        <h3>Commercial Building</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        <p>"ProPainters transformed our home! The team was professional, clean, and efficient. The quality of their work exceeded our expectations. We couldn't be happier with the results."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Sarah Johnson">
+                        <div class="author-details">
+                            <h4>Sarah Johnson</h4>
+                            <p>Homeowner</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        <p>"We hired ProPainters for our office building renovation. They completed the project on time and within budget. The attention to detail was impressive. Highly recommended!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Thompson">
+                        <div class="author-details">
+                            <h4>Michael Thompson</h4>
+                            <p>Business Owner</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        <p>"The color consultation service was invaluable. I was unsure about which colors to choose, but their expert advice made all the difference. Our house looks beautiful inside and out!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Jennifer Lee">
+                        <div class="author-details">
+                            <h4>Jennifer Lee</h4>
+                            <p>Interior Designer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-details">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Painters Avenue, Cityville, ST 12345</p>
+                        <p><i class="fas fa-phone"></i> (91) 8374505524</p>
+                        <p><i class="fas fa-envelope"></i> info@propainters.example</p>
+                        <p><i class="fas fa-clock"></i> Monday-Friday: 8am-6pm, Saturday: 9am-2pm</p>
+                    </div>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.621465758367!2d-74.0059493486782!3d40.72551664252105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259eb7c2b2483%3A0x77c75c5a04c5fb09!2sPainting%20Contractors!5e0!3m2!1sen!2sus!4v1678889997891!5m2!1sen!2sus" width="100%" height="250" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <a href="#" class="footer-logo">Pro<span>Painters</span></a>
+                    <p>Professional painting services for residential and commercial properties. Transforming spaces with quality and care since 2008.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-hours">
+                    <h3>Business Hours</h3>
+                    <p>Monday-Friday: 8am-6pm</p>
+                    <p>Saturday: 9am-2pm</p>
+                    <p>Sunday: Closed</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 ProPainters. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Contact Buttons -->
+    <div class="sticky-contact">
+        <a href="https://wa.me/918374505524" class="sticky-btn whatsapp-btn">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:918374505524" class="sticky-btn call-btn">
+            <i class="fas fa-phone"></i>
+        </a>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
